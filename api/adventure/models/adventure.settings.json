@@ -1,0 +1,87 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adventures",
+  "info": {
+    "name": "Adventure",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "pictures": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "topo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "cotation": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "access": {
+      "type": "richtext"
+    },
+    "duration": {
+      "type": "richtext"
+    },
+    "global_impression": {
+      "type": "richtext"
+    },
+    "participants": {
+      "collection": "participant",
+      "via": "adventures",
+      "dominant": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "PLANNED",
+        "DONE",
+        "ABORTED"
+      ]
+    },
+    "notation": {
+      "type": "integer",
+      "max": 5,
+      "min": 1
+    },
+    "places": {
+      "via": "adventures",
+      "collection": "place"
+    },
+    "sports": {
+      "via": "adventure",
+      "collection": "sport"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}

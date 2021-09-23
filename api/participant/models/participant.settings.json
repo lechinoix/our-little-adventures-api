@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "participants",
+  "info": {
+    "name": "participant",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "adventures": {
+      "via": "participants",
+      "collection": "adventure"
+    }
+  }
+}

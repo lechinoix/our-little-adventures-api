@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sports",
+  "info": {
+    "name": "sport",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "adventure": {
+      "via": "sports",
+      "model": "adventure"
+    }
+  }
+}
