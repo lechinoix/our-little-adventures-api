@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "months",
+  "info": {
+    "name": "month",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "periods": {
+      "collection": "period",
+      "via": "months",
+      "dominant": true
+    }
+  }
+}

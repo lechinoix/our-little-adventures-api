@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "periods",
+  "info": {
+    "name": "period"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "months": {
+      "via": "periods",
+      "collection": "month"
+    },
+    "adventure": {
+      "via": "periods",
+      "model": "adventure"
+    }
+  }
+}

@@ -27,31 +27,10 @@
       "required": false,
       "pluginOptions": {}
     },
-    "topo": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "cotation": {
       "type": "string"
     },
     "description": {
-      "type": "richtext"
-    },
-    "access": {
-      "type": "richtext"
-    },
-    "duration": {
-      "type": "richtext"
-    },
-    "global_impression": {
       "type": "richtext"
     },
     "participants": {
@@ -82,6 +61,35 @@
     },
     "date": {
       "type": "date"
+    },
+    "short_description": {
+      "type": "string"
+    },
+    "elevation": {
+      "type": "integer"
+    },
+    "number_of_days": {
+      "type": "integer"
+    },
+    "orientation": {
+      "type": "enumeration",
+      "enum": [
+        "N",
+        "NE",
+        "E",
+        "SE",
+        "S",
+        "SW",
+        "W",
+        "NW"
+      ]
+    },
+    "periods": {
+      "collection": "period",
+      "via": "adventure"
+    },
+    "external_topos": {
+      "type": "json"
     }
   }
 }
