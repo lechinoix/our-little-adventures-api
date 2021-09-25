@@ -15,9 +15,9 @@
     "name": {
       "type": "string"
     },
-    "adventure": {
+    "adventures": {
       "via": "sports",
-      "model": "adventure"
+      "collection": "adventure"
     }
   }
 }

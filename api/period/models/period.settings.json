@@ -18,9 +18,9 @@
       "via": "periods",
       "collection": "month"
     },
-    "adventure": {
+    "adventures": {
       "via": "periods",
-      "model": "adventure"
+      "collection": "adventure"
     }
   }
 }
