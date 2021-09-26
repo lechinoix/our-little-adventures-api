@@ -43,7 +43,8 @@
       "enum": [
         "PLANNED",
         "DONE",
-        "ABORTED"
+        "ABORTED",
+        "TODO"
       ]
     },
     "notation": {
