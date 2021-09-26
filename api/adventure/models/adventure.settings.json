@@ -34,8 +34,8 @@
       "type": "richtext"
     },
     "participants": {
-      "collection": "participant",
       "via": "adventures",
+      "collection": "participant",
       "dominant": true
     },
     "status": {
@@ -87,8 +87,8 @@
       ]
     },
     "periods": {
-      "collection": "period",
       "via": "adventures",
+      "collection": "period",
       "dominant": true
     },
     "topo": {
