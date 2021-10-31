@@ -18,6 +18,9 @@
     "adventures": {
       "via": "sports",
       "collection": "adventure"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }
