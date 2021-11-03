@@ -1,0 +1,52 @@
+{
+  "name": "Our Litlle Adventures",
+  "description": "A Strapi API to host our adventures",
+  "keywords": [
+    "Blog",
+    "Mountain",
+    "Strapi"
+  ],
+  "website": "https://our-little-adventures.herokuapp.com/admin",
+  "repository": "https://github.com/lechinoix/our-little-adventures-api",
+  "success_url": "/",
+  "scripts": {},
+  "env": {
+    "CLOUDINARY_SECRET": {
+      "description": "A secret key for connecting to Cloudinary",
+      "generator": "secret"
+    },
+    "CLOUDINARY_KEY": {
+      "description": "The account id for connecting to Cloudinary",
+      "generator": "secret"
+    },
+    "CLOUDINARY_NAME": {
+      "description": "The name of the Cloudinary ?"
+    },
+    "MY_HEROKU_URL": {
+      "description": "The URL of the Heroku"
+    },
+    "ADMIN_JWT_SECRET": {
+      "description": "Some secret to encode JWT tokens"
+    },
+    "APP_HOST": {
+      "description": "Internal application URL"
+    }
+  },
+  "image": "heroku/nodejs",
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "9.5"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku-community/apt"
+    },
+    {
+      "url": "https://github.com/stomita/heroku-buildpack-phantomjs"
+    }
+  ]
+}
