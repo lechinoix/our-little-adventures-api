@@ -95,6 +95,11 @@
       "type": "component",
       "repeatable": true,
       "component": "resource.topo"
+    },
+    "cover_picture": {
+      "type": "component",
+      "repeatable": false,
+      "component": "resource.cover-picture"
     }
   }
 }
