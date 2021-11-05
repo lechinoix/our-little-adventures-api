@@ -4,7 +4,7 @@
  */
 const sharp = require('sharp');
 
-const { bytesToKbytes } = require('../utils/file');
+const bytesToKbytes = bytes => Math.round((bytes / 1000) * 100) / 100;
 
 const getMetadatas = buffer =>
   sharp(buffer)
