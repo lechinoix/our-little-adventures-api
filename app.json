@@ -46,7 +46,7 @@
       "url": "heroku-community/apt"
     },
     {
-      "url": "https://github.com/brandoncc/heroku-buildpack-vips"
+      "url": "https://github.com/lechinoix/heroku-buildpack-vips"
     }
   ]
 }
