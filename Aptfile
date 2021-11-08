@@ -4,3 +4,5 @@ libheif-dev
 libpoppler-glib-dev
 libwebp-dev
 fftw3-dev
+libpython3.8-dev
+gdb
