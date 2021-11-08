@@ -11,7 +11,7 @@
     "build:prod": "NODE_ENV=production strapi build",
     "strapi": "strapi",
     "heroku-prebuild": "./scripts/prebuild.sh",
-    "heroku-postbuild": "./scripts/postbuild.sh"
+    "heroku-postbuild": "./scripts/prebuild.sh && yarn build"
   },
   "devDependencies": {},
   "dependencies": {
