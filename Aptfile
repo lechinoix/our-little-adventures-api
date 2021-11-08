@@ -1,3 +1,6 @@
 libglib2.0-0
 libglib2.0-dev
 libheif-dev
+libpoppler-glib-dev
+libwebp-dev
+fftw3-dev
