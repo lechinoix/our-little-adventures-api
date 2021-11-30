@@ -31,7 +31,7 @@
         "ALPINISM"
       ]
     },
-    "CoverPicture": {
+    "cover_picture": {
       "type": "component",
       "repeatable": true,
       "component": "resource.cover-picture"
