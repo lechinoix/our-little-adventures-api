@@ -30,6 +30,11 @@
         "HIKING",
         "ALPINISM"
       ]
+    },
+    "CoverPicture": {
+      "type": "component",
+      "repeatable": true,
+      "component": "resource.cover-picture"
     }
   }
 }
