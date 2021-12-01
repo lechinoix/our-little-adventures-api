@@ -33,7 +33,7 @@
     },
     "cover_picture": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "resource.cover-picture"
     }
   }
