@@ -20,16 +20,7 @@
       "collection": "adventure"
     },
     "slug": {
-      "type": "enumeration",
-      "enum": [
-        "SKI_ALPIN",
-        "SKI_DE_RANDO",
-        "ESCALADE_COUENNE",
-        "ESCALADE_GRANDE_VOIE",
-        "SPELEO",
-        "HIKING",
-        "ALPINISM"
-      ]
+      "type": "string"
     },
     "cover_picture": {
       "type": "component",
