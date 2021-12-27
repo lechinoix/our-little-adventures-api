@@ -3,7 +3,7 @@ const { execSync } = require("child_process");
 
 const region = 'eu-west-3';
 const Bucket = "lesnicoisenvadrouille-db-backups";
-const MAX_NUMBER_DUMP_FILES = 5;
+const MAX_NUMBER_DUMP_FILES = 4;
 const s3Client = new S3Client({ region });
 
 const listDumpScripts = async () => {
