@@ -5,4 +5,4 @@ do
   sed -i "s+/app/vendor+${TMP_DIR}/vendor+g" $file
 done
 
-node backup_data.js
+node $TMP_DIR/scripts/backup_data.js
