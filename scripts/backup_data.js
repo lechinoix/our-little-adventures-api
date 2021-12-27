@@ -1,10 +1,10 @@
 const { S3Client, DeleteObjectCommand, ListObjectsCommand, PutObjectCommand } = require("@aws-sdk/client-s3");
 const { execSync } = require("child_process");
 
-const Region = 'eu-west-3';
+const region = 'eu-west-3';
 const Bucket = "lesnicoisenvadrouille-db-backups";
 const MAX_NUMBER_DUMP_FILES = 5;
-const s3Client = new S3Client({ Region });
+const s3Client = new S3Client({ region });
 
 const listDumpScripts = async () => {
   const listParams = new ListObjectsCommand({ Bucket });
