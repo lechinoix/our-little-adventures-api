@@ -4,5 +4,3 @@ for file in $(grep -rl /app/vendor ${TMP_DIR}/vendor/vips/lib/pkgconfig)
 do
   sed -i "s+/app/vendor+${TMP_DIR}/vendor+g" $file
 done
-
-node $TMP_DIR/scripts/backup_data.js
