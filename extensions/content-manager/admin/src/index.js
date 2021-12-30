@@ -24,6 +24,12 @@ export default strapi => {
         component: ConfigureViewButton,
         key: 'content-manager.link',
       },
+      {
+        plugin: 'content-manager.editView',
+        area: 'right.links',
+        component: ExternalLink,
+        key: 'content-manager.preview-link',
+      },
     ],
     injectionZones: {
       editView: { informations: [] },
