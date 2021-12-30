@@ -105,6 +105,9 @@
       "plugin": "comments",
       "collection": "comment",
       "via": "related"
+    },
+    "preparation_information": {
+      "type": "richtext"
     }
   }
 }
