@@ -5,6 +5,7 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "docker-compose up -d && strapi develop",
+    "develop:admin": "docker-compose up -d && strapi develop --watch-admin",
     "debug": "NODE_OPTIONS='--inspect' strapi start",
     "start": "strapi start",
     "build": "strapi build",

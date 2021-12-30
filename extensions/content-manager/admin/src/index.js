@@ -4,6 +4,7 @@ import pluginLogo from './assets/images/logo.svg';
 import App from './containers/Main';
 
 import ConfigureViewButton from './InjectedComponents/ContentTypeBuilder/ConfigureViewButton';
+import ExternalLink from './InjectedComponents/ExternalLink';
 import lifecycles from './lifecycles';
 import reducers from './reducers';
 import trads from './translations';

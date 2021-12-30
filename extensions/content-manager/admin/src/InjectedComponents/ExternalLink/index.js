@@ -40,7 +40,7 @@ const ExternalLink = () => {
   console.log(data)
   const CLIENT_URL = 'https://www.lesnicoisenvadrouille.fr';
   const { id: adventureId, slug } = data.modifiedData;
-  const token = localStorage.getItem('jwtToken')
+  const token = JSON.parse(localStorage.getItem('jwtToken'))
   if (!token) return null;
 
   return (
