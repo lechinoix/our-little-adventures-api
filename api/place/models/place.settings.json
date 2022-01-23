@@ -37,6 +37,14 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "parent_place": {
+      "model": "place",
+      "via": "child_places"
+    },
+    "child_places": {
+      "collection": "place",
+      "via": "parent_place"
     }
   }
 }
